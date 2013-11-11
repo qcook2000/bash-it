@@ -34,9 +34,7 @@ alias irc="$IRC_CLIENT"
 
 alias rb='ruby'
 
-# Pianobar can be found here: http://github.com/PromyLOPh/pianobar/
-
-alias piano='pianobar'
+alias updateme='sh ~/.bash_it/update-me.sh'
 
 alias ..='cd ..'         # Go up one directory
 alias ...='cd ../..'     # Go up two directories
