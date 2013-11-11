@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 BASH_IT="$HOME/.bash_it"
 
-if [ ! -d ~/.bash_it ] {
+if [ ! -d ~/.bash_it ]; then
   cd && git clone git@github.com:qcook2000/bash-it.git .bash_it
-}
+fi
 cd ~/.bash_it && git pull && cd
 
 cp $HOME/.bash_it/template/bash_profile.template.bash $HOME/.bash_profile
