@@ -32,7 +32,6 @@ source "${BASH_IT}/themes/colors.theme.bash"
 source "${BASH_IT}/themes/base.theme.bash"
 
 # library
-echo 'QQQlib'
 LIB="${BASH_IT}/lib/*.bash"
 for config_file in $LIB
 do
