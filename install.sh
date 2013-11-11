@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 BASH_IT="$HOME/.bash_it"
 
-test -w $HOME/.bash_profile &&
-  cp $HOME/.bash_profile $HOME/.bash_profile.bak &&
-  echo "Your original .bash_profile has been backed up to .bash_profile.bak"
-
 cp $HOME/.bash_it/template/bash_profile.template.bash $HOME/.bash_profile
 
 
@@ -17,8 +13,6 @@ function load_all() {
       dest="${BASH_IT}/${file_type}/enabled/${filename}"
       if [ ! -e "${dest}" ]; then
           ln -s "${src}" "${dest}"
-      else
-          echo "File ${dest} exists, skipping"
       fi
   done
 }
