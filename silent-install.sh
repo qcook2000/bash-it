@@ -14,11 +14,12 @@ declare -a aliases=(bundler general git homebrew osx sublime)
 declare -a completions=(bash-it brew defaults gem git git_flow pip ssh)
 
 for plugin in plugins; do
+  echo "installing ${plugin}";
   ln -s "$BASH_IT/plugins/available/${plugin}.plugin.bash" "$BASH_IT/plugins/enabled"
 done
 for alias in aliases; do
-  ln -s "$BASH_IT/plugins/available/${alias}.aliases.bash" "$BASH_IT/plugins/enabled"
+  ln -s "$BASH_IT/aliases/available/${alias}.aliases.bash" "$BASH_IT/aliases/enabled"
 done
 for completion in completions; do
-  ln -s "$BASH_IT/plugins/available/${completion}.completion.bash" "$BASH_IT/plugins/enabled"
+  ln -s "$BASH_IT/completion/available/${completion}.completion.bash" "$BASH_IT/completion/enabled"
 done
