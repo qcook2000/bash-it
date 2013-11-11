@@ -8,18 +8,17 @@ cd ~/.bash_it && git pull && cd
 
 cp $HOME/.bash_it/template/bash_profile.template.bash $HOME/.bash_profile
 
-ln -s "$path" "$BASH_IT/$file_type/enabled"
 declare -a plugins=(base battery browser dirs extract fasd git java latex nginx node nvm osx python rbenv ruby rvm ssh tmux tmuxinator)
 declare -a aliases=(bundler general git homebrew osx sublime)
 declare -a completions=(bash-it brew defaults gem git git_flow pip ssh)
 
 for plugin in plugins; do
   echo "installing ${plugin}";
-  ln -s "$BASH_IT/plugins/available/${plugin}.plugin.bash" "$BASH_IT/plugins/enabled"
+  bash-it enable plugin "$plugin"
 done
 for alias in aliases; do
-  ln -s "$BASH_IT/aliases/available/${alias}.aliases.bash" "$BASH_IT/aliases/enabled"
+  bash-it enable alias "$alias"
 done
 for completion in completions; do
-  ln -s "$BASH_IT/completion/available/${completion}.completion.bash" "$BASH_IT/completion/enabled"
+  bash-it enable completion "$completion"
 done
