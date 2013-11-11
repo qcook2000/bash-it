@@ -35,6 +35,7 @@ alias irc="$IRC_CLIENT"
 alias rb='ruby'
 
 alias updateme='sh ~/.bash_it/update-me.sh'
+alias updateprofile='sh ~/.bash_it/silent-install.sh && source ~/.bash_profile'
 
 alias ..='cd ..'         # Go up one directory
 alias ...='cd ../..'     # Go up two directories
