@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-# Load RVM, if you are using it
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 # Add rvm gems and nginx to the path
-export PATH=:~/bin:/usr/local/bin:$PATH:~/.gem/ruby/1.8/bin:/opt/nginx/sbin
+export PATH=:~/bin:/usr/local/bin:$PATH
 
 # Path to the bash it configuration
 export BASH_IT=$HOME/.bash_it
