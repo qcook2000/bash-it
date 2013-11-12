@@ -54,3 +54,15 @@ fi
 # Directory
 alias	md='mkdir -p'
 alias	rd='rmdir'
+
+# Grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+
+sshq() {
+  ssh -t -A $1 'bash <(curl -s https://raw.github.com/qcook2000/bash-it/master/silent-install.sh) && source ~/.bash_profile' && ssh -A $1
+}
+
+alias spm="npm -reg http://npm-registry.spotify.net -userconfig ~/.spmrc --always-auth=true"
