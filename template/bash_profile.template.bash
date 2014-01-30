@@ -2,7 +2,7 @@
 
 
 # Add rvm gems and nginx to the path
-export PATH=:~/bin:/usr/local/bin:$PATH
+export PATH=:~/bin:/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
 
 # Path to the bash it configuration
 export BASH_IT=$HOME/.bash_it

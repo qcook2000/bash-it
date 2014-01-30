@@ -32,3 +32,6 @@ alias whotunes='lsof -r 2 -n -P -F n -c iTunes -a -i TCP@`hostname`:3689'
 
 # Flush your dns cache
 alias flush='dscacheutil -flushcache'
+
+alias md5='md5 -r'
+alias md5sum='md5 -r'
