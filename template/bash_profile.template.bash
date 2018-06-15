@@ -15,19 +15,22 @@ export BASH_IT_THEME='envy'
 export GIT_HOSTING='git@git.domain.com'
 
 # Set my editor and git editor
-if [ -f ~/bin/subl ]; then
-  export EDITOR="subl -w"
-  export GIT_EDITOR='subl -w'
-else
-  export EDITOR="nano -w"
-  export GIT_EDITOR='nano -w'
-fi
+#if [ -f ~/bin/subl ]; then
+  export EDITOR="atom -w"
+  export GIT_EDITOR='atom -w'
+#else
+#  export EDITOR="nano -w"
+#  export GIT_EDITOR='nano -w'
+#fi
 
 # Set the path nginx
 export NGINX_PATH='/opt/nginx'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
+
+# Add Flutter
+export PATH=~/flutter/bin:$PATH
 
 
 # Change this to your console based IRC client of choice.
