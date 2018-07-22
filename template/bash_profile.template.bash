@@ -16,8 +16,8 @@ export GIT_HOSTING='git@git.domain.com'
 
 # Set my editor and git editor
 #if [ -f ~/bin/subl ]; then
-  export EDITOR="atom -w"
-  export GIT_EDITOR='atom -w'
+  export EDITOR="code -w"
+  export GIT_EDITOR='code -w'
 #else
 #  export EDITOR="nano -w"
 #  export GIT_EDITOR='nano -w'
